@@ -21,7 +21,7 @@ namespace OnlineSale
             Keyboard keyboard3 = new Keyboard("Rampage ", 14.99);
 
 
-            Console.WriteLine("Hoş geldin gadaşım");
+            Console.WriteLine("Hoş geldin");
             Console.WriteLine("Karşında ürün listesi;");
 
             //Console.WriteLine(Item.TotalCount());
@@ -34,18 +34,18 @@ namespace OnlineSale
             {
                 Console.WriteLine((Item.termsList.IndexOf(item) + 1) + " " + item.Description());
             }
-            Console.Write("Ne istersin canım : ");
+            Console.Write("Ne istersin : ");
 
             do
             {
                 if (onay == "yes")
                 {
-                    Console.Write("Tabi kardeşim ne istersin: ");
+                    Console.Write("Tabi, ne istersin: ");
                 }
 
                 int order = Convert.ToInt32(Console.ReadLine());
                 Item.sepetList.Add(Item.termsList[order - 1]);
-                Console.WriteLine("Buyur kardeşim : " + Item.termsList[order - 1].title);
+                Console.WriteLine("Buyrun : " + Item.termsList[order - 1].title);
                 //Console.WriteLine("Borcun: " + Item.termsList[order - 1].price);
                 //Item.termsList.RemoveAt(order-1);
 
